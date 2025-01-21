@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .Main-Container{
+        /* width: 100%; */
+        background-color: brown;
+    }
+    .Flex-Container{
+        height: px;
+        padding: 18px;
+
+        display: flex;
+        justify-content: space-between;
+    }
+    .Flex-Items{
+        display: flex;
+    }
+    .Orange{
+        padding: 8px;
+        background-color: orange;
+    }
+    .Yellow{
+        padding: 8px;
+        background-color: yellow;
+    }
+    .Green{
+        padding: 8px;
+        background-color: green;
+    }
+    .White{
+        display: none;
+        padding: 8px;
+        background-color: white;
+    }
+    @media screen and (max-width : 500px){
+        .White{
+            display: block;
+        }
+        .Hide{
+            display: none;
+        }
+        
+    }
+</style>
+<body>
+    <header class="Main-Container">
+        <div class="Flex-Container">
+            <div class="Orange">Orange</div>
+            <div class="Flex-Items">
+              <div class="Hide Yellow">Yellow</div>
+              <div class="Hide Green">Green</div>
+            </div>
+            <div class="White"> White</div>
+        </div>
+    </header>
+</body>
+</html>
